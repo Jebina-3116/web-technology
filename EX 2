@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finance & Investment Blog</title>
+</head>
+
+<body bgcolor="lightcyan">
+
+<center>
+
+<!-- Main Heading -->
+<font color="darkblue" size="7">
+<b>FINANCE & INVESTMENT BLOG</b>
+</font>
+
+<br><br>
+
+<font color="green" size="5">
+<b>Learn Smart • Invest Wisely • Grow Wealth</b>
+</font>
+
+<br><br>
+
+<!-- Welcome Message -->
+<marquee bgcolor="gold" behavior="alternate">
+Welcome to Finance & Investment Blog! | Smart Investing Tips |
+Market Updates | Build Your Wealth | Secure Your Future
+</marquee>
+
+<hr color="darkblue" size="4">
+
+<!-- About Our Blog -->
+<table border="2" width="90%" cellpadding="10" bgcolor="lightpink">
+    <tr bgcolor="yellow">
+        <th><font size="6">About Our Blog</font></th>
+    </tr>
+    <tr>
+        <td>
+            <font size="5">
+                Finance & Investment Blog provides simple and useful
+                information about personal finance, saving, investing
+                and wealth management.
+                We help beginners understand financial concepts and
+                make better financial decisions for their future.
+            </font>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Financial Topics -->
+<table border="2" width="90%" cellpadding="10" bgcolor="lightcyan">
+    <tr bgcolor="lightgreen">
+        <th colspan="2"><font size="6">Our Financial Topics</font></th>
+    </tr>
+    <tr>
+        <td>
+            <font size="5">
+                <ul>
+                    <li>Stock Market</li>
+                    <li>Mutual Funds</li>
+                    <li>Personal Finance</li>
+                    <li>Savings</li>
+                    <li>Retirement Planning</li>
+                </ul>
+            </font>
+        </td>
+        <td>
+            <font size="5">
+                <ul>
+                    <li>Gold Investment</li>
+                    <li>Fixed Deposits</li>
+                    <li>Real Estate</li>
+                    <li>Cryptocurrency</li>
+                    <li>Tax Planning</li>
+                </ul>
+            </font>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Investment Planning Form -->
+<table border="2" width="90%" bgcolor="lavender" cellpadding="15">
+    <tr>
+        <td>
+            <form>
+                <fieldset>
+                    <legend>
+                        <font size="6"><b>Investment Planning Form</b></font>
+                    </legend>
+
+                    <font size="5">
+
+                        Investor Name:<br>
+                        <input type="text" size="40">
+                        <br><br>
+
+                        Email:<br>
+                        <input type="email" size="40">
+                        <br><br>
+
+                        Phone Number:<br>
+                        <input type="tel" size="40">
+                        <br><br>
+
+                        Age:<br>
+                        <input type="number" min="18" max="80">
+                        <br><br>
+
+                        Investment Start Date:<br>
+                        <input type="date">
+                        <br><br>
+
+                        Select Investment:<br>
+                        <input type="radio" name="investment"> Stocks
+                        <input type="radio" name="investment"> Mutual Funds
+                        <input type="radio" name="investment"> Gold
+                        <input type="radio" name="investment"> Fixed Deposit
+
+                        <br><br>
+
+                        Financial Goals:<br>
+                        <input type="checkbox"> Wealth Creation
+                        <input type="checkbox"> Retirement
+                        <input type="checkbox"> Child Education
+                        <input type="checkbox"> Emergency Fund
+
+                        <br><br>
+
+                        Risk Level:<br>
+                        <select>
+                            <option>Low Risk</option>
+                            <option>Medium Risk</option>
+                            <option>High Risk</option>
+                        </select>
+
+                        <br><br>
+
+                        City:<br>
+                        <input list="city">
+                        <datalist id="city">
+                            <option value="Chennai">
+                            <option value="Coimbatore">
+                            <option value="Madurai">
+                            <option value="Salem">
+                            <option value="Trichy">
+                        </datalist>
+
+                        <br><br>
+
+                        Choose Your Preferred Theme Colour:<br>
+                        <input type="color">
+
+                        <br><br>
+
+                        Rate Our Blog:<br>
+                        <input type="range" min="1" max="10">
+
+                        <br><br>
+
+                        Financial Goal / Message:<br>
+                        <textarea rows="4" cols="40"></textarea>
+
+                        <br><br>
+
+                        <input type="submit" value="Submit Form">
+                        <input type="reset" value="Clear Form">
+
+                    </font>
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Benefits of Our Blog -->
+<table border="2" width="90%" bgcolor="lightgreen">
+    <tr bgcolor="lightblue">
+        <th><font size="6">Why Follow Our Blog?</font></th>
+    </tr>
+    <tr>
+        <td>
+            <font size="5">
+                Easy Financial Learning<br><br>
+                Beginner-Friendly Content<br><br>
+                Investment Tips<br><br>
+                Market Updates<br><br>
+                Savings Ideas<br><br>
+                Wealth Planning Information
+            </font>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Financial Tip -->
+<details>
+    <summary>
+        <font size="5"><b>Today's Financial Tip</b></font>
+    </summary>
+    <br>
+    <font size="5">
+        Start saving regularly and understand your investment options
+        before investing your hard-earned money.
+        <br><br>
+        Always consider your financial goals and risk level before
+        making investment decisions.
+    </font>
+</details>
+
+<br><br>
+
+<!-- Footer -->
+<marquee bgcolor="lightgreen">
+Thank You for Visiting Finance & Investment Blog!
+Keep Learning and Keep Growing!
+</marquee>
+
+<hr color="green">
+
+<font color="darkblue" size="6">
+Smart Investment Today, Secure Future Tomorrow
+</font>
+
+<br><br>
+
+<font size="5">
+<b>&copy; 2026 Finance & Investment Blog</b>
+<br>
+Your Guide to Smart Financial Decisions
+</font>
+
+</center>
+
+</body>
+</html>
