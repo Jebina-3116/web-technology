@@ -1,0 +1,621 @@
+HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Investment Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">FinWise</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#articles">Articles</a>
+            <a href="#add-article">Add Article</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <p class="tagline">YOUR MONEY. YOUR FUTURE.</p>
+        <h1>Finance & Investment Blog</h1>
+        <p>Learn smart investing, personal finance and wealth management.</p>
+        <a href="#articles" class="hero-btn">Explore Articles</a>
+    </section>
+
+    <section class="highlights">
+        <div class="highlight">
+            <h3>Personal Finance</h3>
+            <p>Manage your money wisely.</p>
+        </div>
+        <div class="highlight">
+            <h3>Smart Investing</h3>
+            <p>Understand investment basics.</p>
+        </div>
+        <div class="highlight">
+            <h3>Financial Growth</h3>
+            <p>Build better saving habits.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="articles">
+            <h2>Latest Finance Articles</h2>
+            <p class="section-text">
+                Explore financial knowledge and investment ideas.
+            </p>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Saving">Saving</button>
+                <button class="filter-btn" data-filter="Investment">Investment</button>
+                <button class="filter-btn" data-filter="Budgeting">Budgeting</button>
+                <button class="filter-btn" data-filter="Saved">Saved</button>
+            </div>
+
+            <div id="articleList" class="article-grid"></div>
+            <p id="counter" class="counter"></p>
+        </section>
+
+        <section id="add-article" class="add-section">
+            <h2>Add a Finance Article</h2>
+            <p class="section-text">
+                Share a useful financial topic with your readers.
+            </p>
+
+            <form id="articleForm">
+                <label for="title">Article Title</label>
+                <input type="text" id="title"
+                       placeholder="Enter article title" required>
+
+                <label for="category">Category</label>
+                <select id="category" required>
+                    <option value="Saving">Saving</option>
+                    <option value="Investment">Investment</option>
+                    <option value="Budgeting">Budgeting</option>
+                </select>
+
+                <label for="description">Description</label>
+                <textarea id="description"
+                          placeholder="Write a short description"
+                          required></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Add Article
+                </button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 FinWise | Finance & Investment Blog</p>
+        <p>Learn today. Invest wisely. Grow tomorrow.</p>
+        <small>Educational content only, not financial advice.</small>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+CSS 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #243447;
+    line-height: 1.6;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #54d6a0;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #54d6a0;
+}
+
+.hero {
+    background: linear-gradient(135deg, #102a43, #176b60);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.tagline {
+    color: #54d6a0;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #54d6a0;
+    color: #102a43;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-btn:hover,
+.submit-btn:hover {
+    background: #35b783;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 35px 8%;
+}
+
+.highlight {
+    background: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 10px;
+    border-bottom: 4px solid #36b783;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.highlight h3 {
+    color: #176b60;
+    margin-bottom: 8px;
+}
+
+main {
+    padding: 35px 8%;
+}
+
+section h2 {
+    color: #102a43;
+    font-size: 28px;
+}
+
+.section-text {
+    color: #64748b;
+    margin: 8px 0 25px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    background: white;
+    color: #176b60;
+    border: 1px solid #176b60;
+    padding: 9px 17px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #176b60;
+    color: white;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.article-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #0000000d;
+    border-top: 4px solid #54d6a0;
+    overflow-wrap: anywhere;
+}
+
+.category {
+    display: inline-block;
+    color: #176b60;
+    background: #e0f7ed;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.article-card h3 {
+    margin-bottom: 10px;
+    color: #102a43;
+}
+
+.article-card p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.card-actions button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: #dff7e9;
+    color: #176b60;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.counter {
+    margin-top: 20px;
+    color: #64748b;
+}
+
+.add-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 55px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #176b60;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 12px;
+    color: #176b60;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    color: #64748b;
+}
+
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer small {
+    color: #b9c9d8;
+}
+
+@media (max-width: 850px) {
+    .article-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 25px 5%;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .add-section {
+        padding: 20px;
+    }
+}
+
+
+JAVASCRIPT
+
+
+const form = document.getElementById("articleForm");
+const titleInput = document.getElementById("title");
+const categoryInput = document.getElementById("category");
+const descriptionInput = document.getElementById("description");
+const articleList = document.getElementById("articleList");
+const counter = document.getElementById("counter");
+const message = document.getElementById("message");
+
+let articles = JSON.parse(localStorage.getItem("financeArticles")) || [
+    {
+        id: 1,
+        title: "How to Start Saving Money",
+        category: "Saving",
+        description: "Learn simple ways to save money and build an emergency fund.",
+        saved: false
+    },
+    {
+        id: 2,
+        title: "Introduction to Stock Market Investing",
+        category: "Investment",
+        description: "Understand the basics of stocks, risk and long-term investing.",
+        saved: false
+    },
+    {
+        id: 3,
+        title: "Create a Monthly Budget",
+        category: "Budgeting",
+        description: "Plan your income and expenses to manage your money better.",
+        saved: false
+    }
+];
+
+let currentFilter = "All";
+
+// Create a new article object
+function createArticle(title, category, description) {
+    return {
+        id: Date.now(),
+        title: title,
+        category: category,
+        description: description,
+        saved: false
+    };
+}
+
+// Add a new article
+function addArticle(title, category, description) {
+    articles.push(createArticle(title, category, description));
+    saveAndRender();
+}
+
+// Save or remove an article from saved articles
+function toggleSaved(id) {
+    articles = articles.map(article =>
+        article.id === id
+            ? { ...article, saved: !article.saved }
+            : article
+    );
+
+    saveAndRender();
+}
+
+// Delete an article
+function deleteArticle(id) {
+    articles = articles.filter(article => article.id !== id);
+    saveAndRender();
+}
+
+// Get articles based on the selected filter
+function getVisible() {
+    if (currentFilter === "Saved") {
+        return articles.filter(article => article.saved);
+    }
+
+    if (currentFilter === "All") {
+        return articles;
+    }
+
+    return articles.filter(
+        article => article.category === currentFilter
+    );
+}
+
+// Create one article card
+function createArticleCard(article) {
+    const card = document.createElement("div");
+    card.className = "article-card";
+
+    const category = document.createElement("span");
+    category.className = "category";
+    category.textContent = article.category;
+
+    const title = document.createElement("h3");
+    title.textContent = article.title;
+
+    const description = document.createElement("p");
+    description.textContent = article.description;
+
+    const actions = document.createElement("div");
+    actions.className = "card-actions";
+
+    const saveButton = document.createElement("button");
+    saveButton.className = "save-btn";
+    saveButton.textContent = article.saved ? "★ Saved" : "☆ Save";
+    saveButton.addEventListener("click", function () {
+        toggleSaved(article.id);
+    });
+
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "delete-btn";
+    deleteButton.textContent = "Delete";
+    deleteButton.addEventListener("click", function () {
+        deleteArticle(article.id);
+    });
+
+    actions.append(saveButton, deleteButton);
+    card.append(category, title, description, actions);
+
+    return card;
+}
+
+// Display the articles on the page
+function renderArticles() {
+    articleList.innerHTML = "";
+
+    const visibleArticles = getVisible();
+
+    if (visibleArticles.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "empty-message";
+        empty.textContent = "No articles found in this category.";
+        articleList.appendChild(empty);
+    } else {
+        visibleArticles.forEach(function (article) {
+            articleList.appendChild(createArticleCard(article));
+        });
+    }
+
+    counter.textContent =
+        visibleArticles.length + " article(s) displayed";
+}
+
+// Save data and refresh the page content
+function saveAndRender() {
+    localStorage.setItem(
+        "financeArticles",
+        JSON.stringify(articles)
+    );
+
+    renderArticles();
+}
+
+// Handle form submission
+function handleSubmit(event) {
+    event.preventDefault();
+
+    const title = titleInput.value.trim();
+    const category = categoryInput.value;
+    const description = descriptionInput.value.trim();
+
+    if (title === "" || description === "") {
+        message.textContent = "Please fill in all fields.";
+        return;
+    }
+
+    addArticle(title, category, description);
+
+    form.reset();
+    message.textContent = "Article added successfully!";
+}
+
+// Handle category filter buttons
+function handleFilter(event) {
+    currentFilter = event.currentTarget.dataset.filter;
+
+    document.querySelectorAll(".filter-btn").forEach(function (button) {
+        button.classList.toggle(
+            "active",
+            button.dataset.filter === currentFilter
+        );
+    });
+
+    renderArticles();
+}
+
+// Connect functions to page events
+form.addEventListener("submit", handleSubmit);
+
+document.querySelectorAll(".filter-btn").forEach(function (button) {
+    button.addEventListener("click", handleFilter);
+});
+
+// Display articles when the page first opens
+renderArticles();
