@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Investment Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Fin<span>Wise.</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#articles">Articles</a>
+            <a href="#tips">Investment Tips</a>
+            <a href="#signup">Join Us</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">SMART MONEY. BETTER FUTURE.</p>
+            <h1>Make Your Money<br>Work for You.</h1>
+            <p>
+                Explore personal finance, saving strategies,
+                stock market basics and smart investment ideas.
+                Build your financial knowledge one step at a time.
+            </p>
+            <a href="#articles" class="btn">Explore Articles</a>
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+        <h2>Welcome to FinWise</h2>
+        <p>
+            FinWise is a finance and investment blog designed to
+            help readers understand money management, budgeting,
+            saving and investing through simple and useful articles.
+        </p>
+    </section>
+
+    <section class="section" id="articles">
+        <h2>Latest Articles</h2>
+        <p class="section-intro">Learn the basics. Make informed decisions.</p>
+
+        <div class="article-container">
+            <article class="article-card">
+                <div class="article-icon">₹</div>
+                <h3>Personal Finance</h3>
+                <p>Learn to manage your income, control expenses
+                and build a healthy financial routine.</p>
+                <a href="#tips">Read More →</a>
+            </article>
+
+            <article class="article-card">
+                <div class="article-icon">↗</div>
+                <h3>Investment Basics</h3>
+                <p>Understand stocks, mutual funds, risk and
+                long-term investing fundamentals.</p>
+                <a href="#tips">Read More →</a>
+            </article>
+
+            <article class="article-card">
+                <div class="article-icon">%</div>
+                <h3>Saving Strategies</h3>
+                <p>Discover budgeting methods, emergency funds
+                and practical ways to save money.</p>
+                <a href="#tips">Read More →</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="tips section" id="tips">
+        <h2>Smart Investment Tips</h2>
+        <div class="tips-list">
+            <p>✓ Set clear financial goals.</p>
+            <p>✓ Create a monthly budget.</p>
+            <p>✓ Understand risk before investing.</p>
+            <p>✓ Research investments carefully.</p>
+            <p>✓ Think about long-term financial needs.</p>
+        </div>
+        <p class="disclaimer">
+            Note: This blog provides educational information,
+            not personalized financial advice.
+        </p>
+    </section>
+
+    <section class="signup-section" id="signup">
+        <div class="signup-box">
+            <h2>Join the FinWise Community</h2>
+            <p>Sign up to start your financial learning journey.</p>
+
+            <form id="signupForm" novalidate>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <span class="error" id="nameError"></span>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <span class="error" id="emailError"></span>
+
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       placeholder="Minimum 8 characters">
+                <span class="error" id="passError"></span>
+
+                <button type="submit" class="btn signup-btn">Sign Up</button>
+                <p id="successMessage" class="success"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 FinWise | Finance & Investment Blog</p>
+        <p>Learn today. Plan tomorrow.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263247;
+    background: #f5f7fb;
+    line-height: 1.6;
+}
+
+header {
+    background: #102542;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e7b34b;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e7b34b;
+}
+
+.hero {
+    min-height: 430px;
+    padding: 85px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(120deg, #102542, #205375);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #f1c15b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    margin-bottom: 28px;
+    max-width: 560px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e7b34b;
+    color: #102542;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f4cc75;
+}
+
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2,
+.signup-box h2 {
+    color: #102542;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #586579;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+    color: #68758a;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.article-card {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(16, 37, 66, 0.08);
+    border-bottom: 3px solid #e7b34b;
+    transition: transform 0.3s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-icon {
+    font-size: 32px;
+    color: #bd8b24;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.article-card h3 {
+    color: #102542;
+    margin-bottom: 12px;
+}
+
+.article-card p {
+    color: #68758a;
+    margin-bottom: 18px;
+}
+
+.article-card a {
+    color: #205375;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tips {
+    background: #eaf0f7;
+}
+
+.tips-list {
+    max-width: 480px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.tips-list p {
+    background: white;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.disclaimer {
+    font-size: 13px;
+    color: #68758a;
+    margin-top: 25px;
+}
+
+.signup-section {
+    padding: 65px 20px;
+    background: #102542;
+}
+
+.signup-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+}
+
+.signup-box > p {
+    color: #68758a;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #cbd3df;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: 2px solid #8bb8d8;
+    border-color: #205375;
+}
+
+.error {
+    display: block;
+    color: #d52b3f;
+    font-size: 13px;
+    text-align: left;
+    min-height: 18px;
+}
+
+.success {
+    color: #18834b;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.signup-btn {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #09182c;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .article-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section h2,
+    .signup-box h2 {
+        font-size: 25px;
+    }
+
+    .signup-box {
+        padding: 25px;
+    }
+}
+
+
+
+
+
+
+const form = document.getElementById("signupForm");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+
+// Function to check empty fields
+function isEmpty(value) {
+    return value.trim() === "";
+}
+
+// Function to validate name
+function isValidName(name) {
+    return name.trim().length >= 3;
+}
+
+// Function to validate email
+function isValidEmail(email) {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+}
+
+// Function to validate password
+function isStrongPassword(password) {
+    return password.length >= 8;
+}
+
+// Function to display error messages
+function showError(id, message) {
+    document.getElementById(id).textContent = message;
+}
+
+// Function to clear previous errors
+function clearErrors() {
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("passError").textContent = "";
+    document.getElementById("successMessage").textContent = "";
+}
+
+// Main validation function
+function validateForm() {
+    let valid = true;
+
+    clearErrors();
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+    // Validate name using if / else
+    if (isEmpty(name)) {
+        showError("nameError", "Name is required");
+        valid = false;
+    } else if (!isValidName(name)) {
+        showError("nameError", "Enter at least 3 characters");
+        valid = false;
+    }
+
+    // Validate email
+    if (isEmpty(email)) {
+        showError("emailError", "Email is required");
+        valid = false;
+    } else if (!isValidEmail(email)) {
+        showError("emailError", "Enter a valid email address");
+        valid = false;
+    }
+
+    // Validate password
+    if (isEmpty(password)) {
+        showError("passError", "Password is required");
+        valid = false;
+    } else if (!isStrongPassword(password)) {
+        showError("passError", "Password must contain at least 8 characters");
+        valid = false;
+    }
+
+    return valid;
+}
+
+// Handle form submission
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (validateForm()) {
+        document.getElementById("successMessage").textContent =
+            "Signup successful! Welcome to FinWise.";
+
+        alert("Signup successful!");
+        form.reset();
+    }
+});
