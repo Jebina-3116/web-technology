@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finance & Investment Blog</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            line-height: 1.6;
+        }
+
+        /* Header */
+
+        header {
+            background: #0b3d2e;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #222;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li {
+            padding: 15px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li:hover {
+            background: #0b3d2e;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            background: #dff3e8;
+            padding: 55px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #0b3d2e;
+            font-size: 30px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Main Container */
+
+        .container {
+            display: flex;
+            padding: 25px;
+            gap: 25px;
+        }
+
+        /* Sidebar */
+
+        .sidebar {
+            width: 25%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .sidebar h3 {
+            color: #0b3d2e;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sidebar li:hover {
+            background: #dff3e8;
+        }
+
+        /* Content */
+
+        .content {
+            width: 75%;
+        }
+
+        .content h2 {
+            color: #0b3d2e;
+        }
+
+        /* Cards */
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            color: #0b3d2e;
+        }
+
+        .card p {
+            margin-top: 8px;
+        }
+
+        /* Button */
+
+        button {
+            background: #0b3d2e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #06251c;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Tablet */
+
+        @media screen and (max-width: 992px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+
+            .cards {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 45%;
+            }
+        }
+
+        /* Mobile */
+
+        @media screen and (max-width: 768px) {
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav li {
+                padding: 12px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .hero {
+                padding: 35px 20px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+
+        /* Small Mobile */
+
+        @media screen and (max-width: 480px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Finance & Investment Blog</h1>
+
+        <p>Learn. Invest. Grow.</p>
+
+    </header>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Stocks</a></li>
+
+            <li><a href="#">Mutual Funds</a></li>
+
+            <li><a href="#">Personal Finance</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h2>Build Your Financial Future</h2>
+
+        <p>
+            Learn about investing, saving, stocks, mutual funds,
+            and smart money management.
+        </p>
+
+    </section>
+
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+
+            <h3>Investment Categories</h3>
+
+            <ul>
+
+                <li>Stock Market</li>
+
+                <li>Mutual Funds</li>
+
+                <li>Personal Finance</li>
+
+                <li>Bonds</li>
+
+                <li>Cryptocurrency</li>
+
+                <li>Retirement Planning</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Main Content -->
+
+        <div class="content">
+
+            <h2>Latest Financial Articles</h2>
+
+            <p>
+                Explore our latest articles and learn how to make
+                better financial and investment decisions.
+            </p>
+
+
+            <!-- Cards -->
+
+            <div class="cards">
+
+
+                <!-- Card 1 -->
+
+                <div class="card">
+
+                    <img src="stockmarket.jpg"
+                         alt="Stock Market">
+
+                    <h3>Stock Market</h3>
+
+                    <p>
+                        Understand the basics of stock market
+                        investing and how stocks work.
+                    </p>
+
+                    <button>Read Article</button>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div class="card">
+
+                    <img src="mutual funds.jpg"
+                         alt="Mutual Funds">
+
+                    <h3>Mutual Funds</h3>
+
+                    <p>
+                        Learn how mutual funds work and how
+                        investors can build diversified portfolios.
+                    </p>
+
+                    <button>Read Article</button>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="card">
+
+                    <img src="personalfinance.jpg"
+                         alt="Personal Finance">
+
+                    <h3>Personal Finance</h3>
+
+                    <p>
+                        Discover simple ways to save money,
+                        manage expenses, and plan your future.
+                    </p>
+
+                    <button>Read Article</button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Finance & Investment Blog</h3>
+
+        <p>
+            Learn today. Invest wisely. Grow tomorrow.
+        </p>
+
+        <p>
+            © 2026 Finance & Investment Blog
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
